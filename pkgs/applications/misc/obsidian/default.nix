@@ -2,7 +2,7 @@
 , fetchurl
 , lib
 , makeWrapper
-, electron_16
+, electron_17
 , makeDesktopItem
 , graphicsmagick
 , writeScript
