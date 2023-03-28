@@ -29192,6 +29192,7 @@ with pkgs;
 
   emacs = emacs28;
   emacs-gtk = emacs28-gtk;
+  emacs-pgtk = emacs28-pgtk;
   emacs-nox = emacs28-nox;
 
   emacs28 = callPackage ../applications/editors/emacs/28.nix {
@@ -29209,6 +29210,10 @@ with pkgs;
 
   emacs28-gtk = emacs28.override {
     withGTK3 = true;
+  };
+
+  emacs28-pgtk = emacs28.override {
+    withPgtk = true;
   };
 
   emacs28-nox = lowPrio (emacs28.override {
